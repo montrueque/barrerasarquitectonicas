@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" role="navigation" aria-label="Menú de navegación">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#frontend-navbar-collapse">
@@ -12,6 +12,7 @@
         </div><!--navbar-header-->
 
         <div class="collapse navbar-collapse" id="frontend-navbar-collapse">
+<h2>Menú de navegación</h2>
             <ul class="nav navbar-nav">
                 <li>{{ link_to_route('frontend.macros', trans('navs.frontend.macros')) }}</li>
             </ul>
