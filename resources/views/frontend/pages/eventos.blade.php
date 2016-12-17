@@ -7,7 +7,7 @@
 
         <div class="col-xs-12">
 
-            @if(!empty($eventos))
+            @if(!empty($eventos) && count($eventos)>0)
                 @foreach($eventos as $evento)
                     <div class="list-group">
                         <a href="#" class="list-group-item">
