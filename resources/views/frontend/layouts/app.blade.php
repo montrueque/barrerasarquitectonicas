@@ -43,7 +43,7 @@
                 @yield('content')
             </main><!-- container -->
         </section><!--#app-->
-
+@include('frontend.includes.footer')
         <!-- Scripts -->
         @yield('before-scripts')
         {!! Html::script(elixir('js/frontend.js')) !!}
