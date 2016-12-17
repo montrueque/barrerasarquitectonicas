@@ -41,8 +41,8 @@
                 @endif
 
                 @if (! $logged_in_user)
-                    <li>{{ link_to_route('frontend.auth.login', trans('navs.frontend.login')) }}</li>
-                    <li>{{ link_to_route('frontend.auth.register', trans('navs.frontend.register')) }}</li>
+                    <li>{{ link_to_route('frontend.auth.login', 'Iniciar sesión' }}</li>
+                    <li>{{ link_to_route('frontend.auth.register', 'Registro' }}</li>
                 @else
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
