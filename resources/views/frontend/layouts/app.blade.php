@@ -33,17 +33,17 @@
         </script>
     </head>
     <body id="app-layout">
-<a href="#main" id="skiplink">Saltar al contenido principal</a>
-<section role="region" id="app">
+    <a href="#main" id="skiplink">Saltar al contenido principal</a>
+    <section role="region" id="app">
             @include('includes.partials.logged-in-as')
-@include('frontend.includes.nav')
+            @include('frontend.includes.nav')
 
             <main role="main" aria-label="Contenido principal" class="container" id="main">
                 @include('includes.partials.messages')
                 @yield('content')
             </main><!-- container -->
+            @include('frontend.includes.footer')
         </section><!--#app-->
-@include('frontend.includes.footer')
         <!-- Scripts -->
         @yield('before-scripts')
         {!! Html::script(elixir('js/frontend.js')) !!}

@@ -13,7 +13,7 @@
                         <div class="list-group-item">
                             <h4 class="list-group-item-heading">{{ $evento->title }}</h4>
                             <p class="list-group-item-text">{{ $evento->description }}</p>
-                            <sub class="list-group-item-text">{{ $evento->start_date }} - {{ $evento->end_date }}</sub>
+                            <sub class="list-group-item-text">{{ $evento->start_date }}</sub>
                         </div>
                     </div>
                 @endforeach
