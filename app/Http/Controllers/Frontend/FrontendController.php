@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Evento;
 use App\Http\Controllers\Controller;
+use App\Ley;
 
 /**
  * Class FrontendController
@@ -50,6 +51,8 @@ class FrontendController extends Controller
 	 */
 	public function legislacion()
 	{
-		return view('frontend.pages.legislacion');
+		$leyes = Ley::all();
+		
+		return view('frontend.pages.legislacion')->with(compact('leyes'));
 	}
 }
