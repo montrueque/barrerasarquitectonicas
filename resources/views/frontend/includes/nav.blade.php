@@ -9,7 +9,7 @@
             </button>
 
             {{-- link_to_route('frontend.index', app_name(), [], ['class' => 'navbar-brand']) --}}
-            Bappreras
+            <span class="navbar-brand">Bappreras</span>
         </div><!--navbar-header-->
 
         <div class="collapse navbar-collapse" id="frontend-navbar-collapse">
