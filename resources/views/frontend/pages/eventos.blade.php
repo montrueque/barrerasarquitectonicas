@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <h1>Eventos</h1>
+    <header role="banner" aria-label="Título"><h1>Eventos</h1></header>
 
     <div class="row">
 
@@ -15,7 +15,7 @@
                 @foreach($eventos as $evento)
                     <div class="list-group">
                         <div class="list-group-item">
-                            <h4 class="list-group-item-heading">{{ $evento->title }}</h4>
+                            <h2 class="list-group-item-heading">{{ $evento->title }}</h2>
                             <p class="list-group-item-text">{{ $evento->description }}</p>
                             <sub class="list-group-item-text">{{ $evento->start_date }}</sub>
                         </div>

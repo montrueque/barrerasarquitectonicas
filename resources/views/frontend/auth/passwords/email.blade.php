@@ -13,7 +13,7 @@
 
             <div class="panel panel-default">
 
-                <div class="panel-heading">{{ trans('labels.frontend.passwords.reset_password_box_title') }}</div>
+                <div class="panel-heading"><h1>{{ trans('labels.frontend.passwords.reset_password_box_title') }}</h1></div>
 
                 <div class="panel-body">
 

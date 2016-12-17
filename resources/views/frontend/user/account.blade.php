@@ -6,7 +6,7 @@
         <div class="col-xs-12">
 
             <div class="panel panel-default">
-                <div class="panel-heading">{{ trans('navs.frontend.user.account') }}</div>
+                <div class="panel-heading"><h1>{{ trans('navs.frontend.user.account') }}</h1></div>
 
                 <div class="panel-body">
 

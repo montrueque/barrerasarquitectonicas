@@ -6,7 +6,7 @@
         <div class="col-xs-12">
 
             <div class="panel panel-default">
-                <div class="panel-heading">{{ trans('navs.frontend.dashboard') }}</div>
+                <div class="panel-heading"><h1>{{ trans('navs.frontend.dashboard') }}</h1></div>
 
                 <div class="panel-body">
 
@@ -17,17 +17,17 @@
                             <ul class="media-list">
                                 <li class="media">
                                     <div class="media-left">
-                                        <img class="media-object" src="{{ $logged_in_user->picture }}" alt="Profile picture">
+                                        <img class="media-object" src="{{ $logged_in_user->picture }}" alt="Foto de perfil"/>
                                     </div><!--media-left-->
 
                                     <div class="media-body">
-                                        <h4 class="media-heading">
+                                        <p class="media-heading">
                                             {{ $logged_in_user->name }}<br/>
                                             <small>
                                                 {{ $logged_in_user->email }}<br/>
                                                 Joined {{ $logged_in_user->created_at->format('F jS, Y') }}
                                             </small>
-                                        </h4>
+                                        </p>
 
                                         {{ link_to_route('frontend.user.account', trans('navs.frontend.user.account'), [], ['class' => 'btn btn-info btn-xs']) }}
 
@@ -40,7 +40,7 @@
 
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h4>Sidebar Item</h4>
+                                    <h2>Elemento de la barra lateral</h2>
                                 </div><!--panel-heading-->
 
                                 <div class="panel-body">
@@ -50,7 +50,7 @@
 
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h4>Sidebar Item</h4>
+                                    <h2>Elemento de la barra lateral</h2>
                                 </div><!--panel-heading-->
 
                                 <div class="panel-body">
@@ -64,7 +64,7 @@
                                 <div class="col-xs-12">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
-                                            <h4>Item</h4>
+                                            <h2>Elemento</h2>
                                         </div><!--panel-heading-->
 
                                         <div class="panel-body">
@@ -78,7 +78,7 @@
                                 <div class="col-md-6">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
-                                            <h4>Item</h4>
+                                            <h2>Elemento</h2>
                                         </div><!--panel-heading-->
 
                                         <div class="panel-body">
@@ -90,7 +90,7 @@
                                 <div class="col-md-6">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
-                                            <h4>Item</h4>
+                                            <h2>Elemento</h2>
                                         </div><!--panel-heading-->
 
                                         <div class="panel-body">
@@ -102,7 +102,7 @@
                                 <div class="col-md-6">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
-                                            <h4>Item</h4>
+                                            <h2>Elemento</h2>
                                         </div><!--panel-heading-->
 
                                         <div class="panel-body">
@@ -114,7 +114,7 @@
                                 <div class="col-md-6">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
-                                            <h4>Item</h4>
+                                            <h2>Elemento</h2>
                                         </div><!--panel-heading-->
 
                                         <div class="panel-body">

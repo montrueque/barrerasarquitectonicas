@@ -5,13 +5,14 @@
 @endsection
 
 @section('content')
+<header role="banner" aria-label="Título"><h1>Conciencia social</h1></header>
     <div class="row">
 
         <div class="col-xs-12">
 
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    Testimonios con nombre y apellidos
+                    <h2>Testimonios con nombre y apellidos</h2>
                 </div>
 
                 <div class="panel-body">
@@ -20,7 +21,7 @@
                             <div class="list-group">
                                 <div class="list-group-item">
                                     <img src="{{ $testimonio->thumbnail_url }}" alt="{{ $testimonio->title }}" />
-                                    <h4 class="list-group-item-heading">{{ $testimonio->title }}</h4>
+                                    <h3 class="list-group-item-heading">{{ $testimonio->title }}</h3>
                                 </div>
                             </div>
                         @endforeach
@@ -36,7 +37,7 @@
 
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    Las barreras arquitectónicas en fotos y vídeos
+                    <h2>Las barreras arquitectónicas en fotos y vídeos</h2>
                 </div>
 
                 <div class="panel-body">
@@ -45,7 +46,7 @@
                             <div class="list-group">
                                 <div class="list-group-item">
                                     <img src="{{ $barrera->thumbnail_url }}" alt="{{ $barrera->title }}" />
-                                    <h4 class="list-group-item-heading">{{ $barrera->title }}</h4>
+                                    <h3 class="list-group-item-heading">{{ $barrera->title }}</h3>
                                 </div>
                             </div>
                         @endforeach

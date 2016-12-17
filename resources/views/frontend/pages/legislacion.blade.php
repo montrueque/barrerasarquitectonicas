@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <h1>Legislación</h1>
+    <header role="banner" aria-label="Título"><h1>Legislación</h1></header>
 
     <div class="row">
 
@@ -15,7 +15,7 @@
                 @foreach($leyes as $ley)
                     <div class="list-group">
                         <div class="list-group-item">
-                            <h4 class="list-group-item-heading">{{ $ley->title }}</h4>
+                            <h2 class="list-group-item-heading">{{ $ley->title }}</h2>
                             <p class="list-group-item-text">{{ $ley->description }}</p>
                             <a href="{{ $ley->download_url }}" target="_blank" class="btn btn-success">Descargar</a>
                         </div>
