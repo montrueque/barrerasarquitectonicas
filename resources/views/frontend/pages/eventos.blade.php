@@ -6,7 +6,7 @@
         <div class="col-xs-12">
 
             @if(!empty($eventos))
-                @foreach($evento in $eventos)
+                @foreach($eventos as $evento)
                     <div class="list-group">
                         <a href="#" class="list-group-item active">
                             <h4 class="list-group-item-heading">List group item heading</h4>
