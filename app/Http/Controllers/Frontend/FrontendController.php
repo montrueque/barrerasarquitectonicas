@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Frontend;
 
+use App\Evento;
 use App\Http\Controllers\Controller;
 
 /**
@@ -39,7 +40,7 @@ class FrontendController extends Controller
 	 */
 	public function eventos()
 	{
-		$eventos = [];
+		$eventos = Evento::all();
 		
 		return view('frontend.pages.eventos')->with(compact('eventos'));
 	}

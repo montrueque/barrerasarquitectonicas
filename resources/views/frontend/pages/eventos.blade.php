@@ -1,6 +1,8 @@
 @extends('frontend.layouts.app')
 
 @section('content')
+    <h1>Eventos</h1>
+
     <div class="row">
 
         <div class="col-xs-12">
