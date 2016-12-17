@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-    <div id="map"></div>
+    <div id="map" style="width: 100%; height: 30%"></div>
 
     <div class="row">
 
@@ -28,7 +28,7 @@
     <script>
         function initMap() {
             var map = new google.maps.Map(document.getElementById('map'), {
-                center: {lat: -34.397, lng: 150.644},
+                center: {lat: 40.45, lng: -3.7},
                 scrollwheel: false,
                 zoom: 8
             });
