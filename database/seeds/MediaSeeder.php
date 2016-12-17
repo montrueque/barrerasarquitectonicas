@@ -4,7 +4,7 @@ use \Illuminate\Database\Seeder;
 use \Illuminate\Support\Facades\DB;
 use \App\Media;
 
-class LeyesSeeder extends Seeder {
+class MediaSeeder extends Seeder {
     public function run()
     {
         if (env('DB_CONNECTION') == 'mysql') {
