@@ -20,6 +20,8 @@ class CreateMediaTables extends Migration
 			$table->increments('id')->unsigned();
 			$table->string('title');
 			$table->string('description')->nullable();
+			$table->string('resource_url')->nullable();
+			$table->string('thumbnail_url')->nullable();
 			$table->integer('user_id');
 			$table->string('type');
 			$table->timestamps();
