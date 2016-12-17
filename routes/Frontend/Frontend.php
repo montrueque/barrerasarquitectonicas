@@ -6,6 +6,7 @@
  */
 Route::get('/', 'FrontendController@index')->name('index');
 Route::get('macros', 'FrontendController@macros')->name('macros');
+Route::get('conciencia-social', 'FrontendController@concienciaSocial')->name('macros');
 
 /**
  * These frontend controllers require the user to be logged in

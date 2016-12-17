@@ -25,4 +25,12 @@ class FrontendController extends Controller
 	{
 		return view('frontend.macros');
 	}
+
+	/**
+	 * @return \Illuminate\View\View
+	 */
+	public function concienciaSocial()
+	{
+		return view('frontend.pages.conciencia_social');
+	}
 }
