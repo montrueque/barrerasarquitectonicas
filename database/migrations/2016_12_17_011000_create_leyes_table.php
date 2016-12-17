@@ -21,7 +21,7 @@ class CreateLeyesTable extends Migration
 			$table->string('title');
 			$table->string('description')->nullable();
 			$table->integer('user_id');
-			$table->integer('download_url')->nullable();
+			$table->string('download_url')->nullable();
 			$table->timestamps();
 			$table->softDeletes();
 		});
