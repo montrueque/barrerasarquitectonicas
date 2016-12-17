@@ -33,4 +33,22 @@ class FrontendController extends Controller
 	{
 		return view('frontend.pages.conciencia_social');
 	}
+	
+	/**
+	 * @return \Illuminate\View\View
+	 */
+	public function eventos()
+	{
+		$eventos = [];
+		
+		return view('frontend.pages.eventos')->with(compact('eventos'));
+	}
+
+	/**
+	 * @return \Illuminate\View\View
+	 */
+	public function legislacion()
+	{
+		return view('frontend.pages.legislacion');
+	}
 }

@@ -12,9 +12,12 @@
         </div><!--navbar-header-->
 
         <div class="collapse navbar-collapse" id="frontend-navbar-collapse">
-<h2>Menú de navegación</h2>
+<!--<h2>Menú de navegación</h2>-->
             <ul class="nav navbar-nav">
-                <li>{{ link_to_route('frontend.macros', trans('navs.frontend.macros')) }}</li>
+                <!--<li>{{ link_to_route('frontend.macros', trans('navs.frontend.macros')) }}</li>-->
+                    <li>{{ link_to_route('frontend.conciencia-social', 'Conciencia social' }}</li>
+                    <li>{{ link_to_route('frontend.eventos', 'Eventos' }}</li>
+                    <li>{{ link_to_route('frontend.legislacion', 'Legislación' }}</li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
