@@ -28,6 +28,6 @@ class EventosSeeder extends Seeder {
             'header_image' => 'http://noticiasdecamargo.es/wp-content/uploads/2012/05/Concurso-Once.jpg',
             'start_date' => Carbon::create(2017, 1, 8, 9, 30, 0, 'Europe/Madrid'),
             'end_date' => Carbon::create(2017, 1, 10, 17, 30, 0, 'Europe/Madrid')
-        ])
+        ]);
     }
 }
