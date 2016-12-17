@@ -17,19 +17,19 @@ class CreateBarreraTable extends Migration
 	public function up()
 	{
 		Schema::create('barreras', function (Blueprint $table) {
-			$table->increments('id')->unsigned();
-			$table->string('name');
-			$table->string('description')->nullable();
-			$table->string('address')->nullable();
-			$table->integer('zip')->nullable();
-			$table->string('city')->nullable();
-			$table->string('latitude');
-			$table->string('longitude');
-			$table->integer('user_id');
-			$table->string('type');
-			$table->boolean('temporary')->default(false);
-			$table->timestamps();
-			$table->softDeletes();
+			$table->increments('id')->unsigned(),
+			$table->string('name'),
+			$table->string('description')->nullable(),
+			$table->string('address')->nullable(),
+			$table->integer('zip')->nullable(),
+			$table->string('city')->nullable(),
+			$table->string('latitude'),
+			$table->string('longitude'),
+			$table->integer('user_id'),
+			$table->string('type'),
+			$table->boolean('temporary')->default(false),
+			$table->timestamps(),
+			$table->softDeletes()
 		});
 	}
 
