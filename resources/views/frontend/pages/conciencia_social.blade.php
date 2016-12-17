@@ -11,7 +11,18 @@
                 </div>
 
                 <div class="panel-body">
-                    {{ trans('strings.frontend.welcome_to', ['place' => app_name()]) }}
+                    @if(!empty($testimonios) && count($testimonios)>0)
+                        @foreach($testimonios as $testimonio)
+                            <div class="list-group">
+                                <div class="list-group-item">
+                                    <img src="{{ $testimonio->thumbnail_url }}" alt="{{ $testimonio->title }}" />
+                                    <h4 class="list-group-item-heading">{{ $testimonio->title }}</h4>
+                                </div>
+                            </div>
+                        @endforeach
+                    @else
+                        <p>No hay testimonios en este momento</p>
+                    @endif
                 </div>
             </div><!-- panel -->
 
@@ -25,7 +36,18 @@
                 </div>
 
                 <div class="panel-body">
-                    {{ trans('strings.frontend.welcome_to', ['place' => app_name()]) }}
+                    @if(!empty($barreras) && count($barreras)>0)
+                        @foreach($barreras as $barrera)
+                            <div class="list-group">
+                                <div class="list-group-item">
+                                    <img src="{{ $barrera->thumbnail_url }}" alt="{{ $barrera->title }}" />
+                                    <h4 class="list-group-item-heading">{{ $barrera->title }}</h4>
+                                </div>
+                            </div>
+                        @endforeach
+                    @else
+                        <p>No hay testimonios en este momento</p>
+                    @endif
                 </div>
             </div><!-- panel -->
 

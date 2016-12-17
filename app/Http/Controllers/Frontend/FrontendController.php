@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Evento;
 use App\Http\Controllers\Controller;
 use App\Ley;
+use App\Media;
 
 /**
  * Class FrontendController
@@ -33,7 +34,10 @@ class FrontendController extends Controller
 	 */
 	public function concienciaSocial()
 	{
-		return view('frontend.pages.conciencia_social');
+		$testimonios = Media::where('type', 'testimonio')->take(5)->get;
+		$testimonios = Media::where('type', 'barrera')->take(5)->get;
+		
+		return view('frontend.pages.conciencia_social')->with(compact('media', 'barreras'));
 	}
 	
 	/**
