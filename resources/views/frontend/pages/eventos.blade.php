@@ -1,5 +1,9 @@
 @extends('frontend.layouts.app')
 
+@section('title')
+    Eventos
+@endsection
+
 @section('content')
     <h1>Eventos</h1>
 

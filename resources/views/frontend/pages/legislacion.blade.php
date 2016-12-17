@@ -1,5 +1,9 @@
 @extends('frontend.layouts.app')
 
+@section('title')
+    Legislación
+@endsection
+
 @section('content')
     <h1>Legislación</h1>
 

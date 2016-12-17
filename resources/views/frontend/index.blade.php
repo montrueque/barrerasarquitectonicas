@@ -1,5 +1,9 @@
 @extends('frontend.layouts.app')
 
+@section('title')
+    Barreras arquitectónicas
+@endsection
+
 @section('content')
     <div id="map" style="width: 100%; height: 30%"></div>
 

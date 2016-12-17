@@ -1,5 +1,9 @@
 @extends('frontend.layouts.app')
 
+@section('title')
+    Conciencia social
+@endsection
+
 @section('content')
     <div class="row">
 
