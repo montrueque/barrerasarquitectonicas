@@ -7,7 +7,7 @@ use Illuminate\Database\Migrations\Migration;
 /**
  * Class CreateEventsTable
  */
-class CreateEventsTable extends Migration
+class CreateLeyesTable extends Migration
 {
 	/**
 	 * Run the migrations.
