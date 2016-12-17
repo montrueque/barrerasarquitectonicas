@@ -23,7 +23,7 @@
 
 @section('after-scripts')
 
-    <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCqveAbp5MaCFiQ8bfD72epubvrJOD2jE4&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqveAbp5MaCFiQ8bfD72epubvrJOD2jE4&callback=initMap" async defer></script>
 
     <script>
         function initMap() {
