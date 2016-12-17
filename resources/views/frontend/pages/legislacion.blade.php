@@ -7,7 +7,7 @@
 
         <div class="col-xs-12">
 
-            @if(!empty($leyes))
+            @if(!empty($leyes) && count($leyes)>0)
                 @foreach($leyes as $ley)
                     <div class="list-group">
                         <div class="list-group-item">
@@ -18,7 +18,7 @@
                     </div>
                 @endforeach
             @else
-                <p>No hay eventos próximos en este momento</p>
+                <p>No hay leyes en este momento</p>
             @endif
 
         </div><!-- col-md-10 -->
