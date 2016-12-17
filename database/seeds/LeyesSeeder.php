@@ -13,15 +13,15 @@ class LeyesSeeder extends Seeder {
         }
 
         $ley = Ley::create([
-            'title' => 'RD 556/1989, de 19 de Mayo'
-            'description' => 'Este Real Decreto arbitra medidas mínimas sobre accesibilidad en los edificios.'
+            'title' => 'RD 556/1989, de 19 de Mayo',
+            'description' => 'Este Real Decreto arbitra medidas mínimas sobre accesibilidad en los edificios.',
             'user_id' => 1,
             'download_url' => 'http://miliarium.com/Paginas/Leyes/urbanismo/estatal/RD556-89.asp'
         ]);
 
         $ley = Ley::create([
-            'title' => 'Ley 13/1982, de 7 de abril'
-            'description' => 'Esta Ley reua la Integración Social de las personas con discapacidad.'
+            'title' => 'Ley 13/1982, de 7 de abril',
+            'description' => 'Esta Ley reua la Integración Social de las personas con discapacidad.',
             'user_id' => 1,
             'download_url' => 'http://miliarium.com/Paginas/Leyes/urbanismo/estatal/L13_82.asp'
         ]);
