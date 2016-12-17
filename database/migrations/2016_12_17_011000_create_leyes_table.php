@@ -23,6 +23,7 @@ class CreateLeyesTable extends Migration
 			$table->integer('user_id');
 			$table->integer('download_url')->nullable();
 			$table->timestamps();
+			$table->softDeletes();
 		});
 	}
 

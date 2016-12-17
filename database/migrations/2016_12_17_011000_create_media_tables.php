@@ -23,6 +23,7 @@ class CreateMediaTables extends Migration
 			$table->integer('user_id');
 			$table->string('type');
 			$table->timestamps();
+			$table->softDeletes();
 		});
 	}
 
