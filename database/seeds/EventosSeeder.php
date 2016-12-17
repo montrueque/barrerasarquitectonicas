@@ -1,9 +1,9 @@
 <?php
 
-use \Illuminate\Database\Seeder
-use \Illuminate\Support\Facades\DB
-use \App\Evento
-use \Carbon\Carbon
+use \Illuminate\Database\Seeder;
+use \Illuminate\Support\Facades\DB;
+use \App\Evento;
+use \Carbon\Carbon;
 
 class EventosSeeder extends Seeder {
     public function run()

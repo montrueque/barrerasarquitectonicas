@@ -1,9 +1,9 @@
 <?php
 
-use \Illuminate\Database\Seeder
-use \Illuminate\Support\Facades\DB
-use \App\Ley
-use \Carbon\Carbon
+use \Illuminate\Database\Seeder;
+use \Illuminate\Support\Facades\DB;
+use \App\Ley;
+use \Carbon\Carbon;
 
 class LeyesSeeder extends Seeder {
     public function run()
