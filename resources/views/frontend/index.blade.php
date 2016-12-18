@@ -5,10 +5,10 @@
 @endsection
 
 @section('content')
-    <div id="map" style="width: 100%; height: 30%"></div>
+
+    {!!$map['html']!!}
 
     <div class="row">
-
 
         <h1>Empieza a buscar las barreras arquitectónicas que te rodean</h1>
         <div class="col-xs-12">
@@ -27,7 +27,7 @@
 
 @section('after-scripts')
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqveAbp5MaCFiQ8bfD72epubvrJOD2jE4&callback=initMap" async defer></script>
+    <script type="text/javascript">var centreGot = false;</script>{!!$map['js']!!}
 
     <script>
         function initMap() {
