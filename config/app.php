@@ -185,6 +185,7 @@ return [
 		HieuLe\Active\ActiveServiceProvider::class,
 		Laravel\Socialite\SocialiteServiceProvider::class,
 		Yajra\Datatables\DatatablesServiceProvider::class,
+		GeneaLabs\Phpgmaps\PhpgmapsServiceProvider::class,
 
 		/*
 		 * Has to override the Collective\Html\HtmlServiceProvider form singleton
@@ -257,6 +258,7 @@ return [
 		'Breadcrumbs' => DaveJamesMiller\Breadcrumbs\Facade::class,
 		'Captcha'     => Arcanedev\NoCaptcha\Facades\NoCaptcha::class,
 		'Form'        => Collective\Html\FormFacade::class,
+		'Gmaps'		  => GeneaLabs\Phpgmaps\Facades\PhpgmapsFacade::class,
 		'Gravatar'    => Creativeorange\Gravatar\Facades\Gravatar::class,
 		'Html'        => Collective\Html\HtmlFacade::class,
 		'Socialite'   => Laravel\Socialite\Facades\Socialite::class,
