@@ -16,6 +16,9 @@ Route::get('legislacion', 'FrontendController@legislacion')->name('legislacion')
  */
 Route::group(['middleware' => 'auth'], function () {
 	Route::group(['namespace' => 'User', 'as' => 'user.'], function() {
+		Route::get('nuevo-evento', 'FrontendController@nuevoEvento')->name('nuevo-evento');
+		Route::get('nuevo-media', 'FrontendController@nuevoMedia')->name('nuevo-media');
+
 		/**
 		 * User Dashboard Specific
 		 */
