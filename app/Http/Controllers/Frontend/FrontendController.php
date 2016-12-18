@@ -59,20 +59,4 @@ class FrontendController extends Controller
 		
 		return view('frontend.pages.legislacion')->with(compact('leyes'));
 	}
-
-	/**
-	 * @return \Illuminate\View\View
-	 */
-	public function nuevoEvento()
-	{
-		return view('frontend.pages.nuevo_evento');
-	}
-
-	/**
-	 * @return \Illuminate\View\View
-	 */
-	public function nuevoMedia()
-	{
-		return view('frontend.pages.nuevo_media');
-	}
 }
